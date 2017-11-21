@@ -1,0 +1,425 @@
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF UI Display";
+  background: #FFF;
+}
+
+.body_owerloyd {
+  overflow: hidden;
+}
+
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* Header */
+
+.header {
+  background: #443E40;
+  height: 48px;
+}
+
+.headhesive {
+  background: #443E40;
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.headhesive--stick {
+  background: rgba(68, 62, 64, 0.94);
+}
+
+.header_mobile {
+  background: #443E40;
+  transition: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.menumobile {
+  width: 33.3%;
+  float: left;
+  margin: 0;
+  cursor: pointer;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button.burger {
+  display: block;
+  margin: 28px auto;
+  padding: 0;
+  height: 1.4px;
+  width: 17px;
+  border: none;
+  background: #FFF;
+  top: -8px;
+  position: relative;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+button.burger:before {
+  content: "";
+  height: 1.4px;
+  width: 17px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.icon.active .burger {
+  top: -4px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.icon.active .burger:before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.menu {
+  display: none;
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  background: rgba(68, 62, 64, 1);
+  top: 48px;
+}
+
+.menu_opened {
+  display: block;
+}
+
+.menu .menu3 {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 30px 50px;
+}
+
+.menu .menu2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+}
+
+.menu ul.menu2>li>a {
+  color: #FFF;
+  text-decoration: none;
+  line-height: 48px;
+}
+
+.menu ul.menu2>li a:before {
+  content: "";
+  clear: both;
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  position: relative;
+  box-sizing: border-box;
+  top: 43px;
+}
+
+.wrapper>ul.menu1 {
+  display: none;
+}
+
+.logo {
+  width: 33.3%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 11px 0 0 0;
+  cursor: pointer;
+}
+
+.logo>a>img {
+  width: 20px;
+}
+
+button.btn {
+  display: none;
+}
+
+.search {
+  display: none;
+  cursor: pointer;
+}
+
+.navigation {
+  width: 33.3%;
+  float: right;
+  text-align: right;
+  margin-top: -25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navigation>img {
+  width: 20px;
+}
+
+/* Slider **/
+
+.slider {
+  display: block;
+  background: #F7f7f7;
+}
+
+.slider .sliderfoto {
+  display: block;
+  width: 100%;
+  z-index: 0;
+  padding: 10px 0 0 0;
+}
+
+.slider .text {
+  display: none;
+}
+
+.mission {
+  display: block;
+  margin: 0 auto 0 auto;
+  color: #f0f0f2;
+  background: #443e40;
+}
+
+.block {
+  display: block;
+  width: 80px;
+  margin: -40px auto 0px auto;
+}
+
+h1 {
+  display: block;
+  margin: -9px auto 0 auto;
+  padding: 64px 0 18px 0;
+  text-align: center;
+  font-size: 56px;
+  font-family: "SF UI Display", sans-serif;
+  font-weight: 500
+}
+
+.mission>p {
+  text-align: center;
+  color: #EBDFCE;
+  padding: 0 20px 53px 20px;
+  font-size: 20px;
+  margin: 17px 0 0 0;
+  font-weight: 100;
+  font-family: 'SF UI Display';
+}
+
+.mission>img.block2 {
+  display: none;
+}
+
+.mission .block3 {
+  display: none;
+}
+
+.service {
+  display: block;
+  background: #FFF;
+  color: #443e40;
+  margin: 0;
+  padding: 120px 0 90px 0;
+}
+
+.service .text1 {
+  padding: 0 35px;
+  line-height: 45px;
+}
+
+.service .text1>span.h1 {
+  font-size: 27px;
+}
+
+.service .block {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 30px 0 0 0;
+}
+
+.service .block .phone {
+  display: block;
+  margin: 0 0 0 165px;
+}
+
+.service .block>p {
+  text-align: center;
+  margin: -37px 0 0 0;
+}
+
+.service .block .tel {
+  color: #cfa68f;
+  font-size: 36px;
+}
+
+button.btn2 {
+  display: block;
+  border: 0px solid;
+  background: #443e40;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #fff;
+  padding: 9px 44px;
+  cursor: pointer;
+  margin: 23px auto 0 auto;
+  font-family: "SF UI Display", sans-serif;
+}
+
+.service1 {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Gotham Pro';
+}
+
+.service1 .colu1 {
+  background: #443e40;
+  color: #EBDFCE;
+}
+
+.service1 .chidr {
+  padding: 60px 0 25px 0;
+}
+
+.service1 .slog {
+  padding: 0 0 60px 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.service1 .colu2 {
+  background: #EBDFCE;
+  color: #443e40;
+}
+
+.service1 .colu3 {
+  background: #FFF;
+}
+
+.reviews {
+  margin: 90px auto 90px auto;
+}
+
+.reviews .glavas .revi {
+  font-size: 70px;
+  padding: 0 70px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  line-height: 60px;
+  color: #443E40;
+}
+
+.reviews .ter .te {
+  text-align: center;
+  font-size: 15px;
+  color: #999;
+  padding: 40px 70px 49px 70px;
+  margin: 0;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+button.btn3 {
+  display: block;
+  background: #443e40;
+  border-radius: 25px;
+  border: 0px solid;
+  font-size: 16px;
+  padding: 12px 45px;
+  cursor: pointer;
+  margin: 0 auto 0 auto;
+  font-family: "SF UI Display", sans-serif;
+  color: #fff;
+}
+
+/* Footer */
+
+.center {
+  display: block;
+}
+
+.center .quote {
+  font-size: 17px;
+  text-align: center;
+  color: #443e40;
+  letter-spacing: 0.2px;
+}
+
+.center .quote>span.nuga {
+  color: #373B92;
+}
+
+.center .logotip {
+  display: block;
+  margin: 110px auto 0 auto;
+  padding: 0;
+}
+
+.block1 {
+  display: none;
+}
+
+.block2 {
+  display: none;
+}
+
+/* Media правила */
